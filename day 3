@@ -1,0 +1,18 @@
+given code snipet compares the remaining need with available resources anf if meaining need < available resources	
+it gives flag one and exits the loop
+int y=0;
+	for(k=0;k<5;k++)
+	{
+		for(i=0;i<n;i++)
+		{
+			if(f[i]==0)
+			{
+				int flag=0;
+				for(j=0;j<m;j++)
+				{
+					if(need[i][j]>avail[j])
+					{
+						flag=1;
+						break;
+					}
+				}
