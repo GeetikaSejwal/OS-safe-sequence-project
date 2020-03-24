@@ -1,0 +1,19 @@
+given code snipet prints the overall safe sequence 	
+
+
+					ans[ind++]=i;
+					for(y=0;y<m;y++)
+					avail[y]+=alloc[i][y];
+					f[i]=1;
+				}
+			}
+		}
+	}
+	cout<<"SAFE Sequence:"<<endl;
+	for(i=0;i<n-1;i++)
+	{
+		cout<<"p"<<ans[i]<<"->";
+	}
+	cout<<"p"<<ans[n-1]<<endl;
+	return(0);
+}
